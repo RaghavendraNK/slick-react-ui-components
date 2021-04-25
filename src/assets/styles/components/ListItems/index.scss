@@ -1,0 +1,51 @@
+#RRUCListItem {
+    /* Enabled */
+    .list-item {
+        display: flex;
+        align-items: center;
+        padding: 8px 0 8px 24px;
+        border-radius: 0 30px 30px 0;
+        background: $white;
+
+        .list-icon {
+            flex: none;
+            flex-grow: 0;
+            order: 0;
+            width: 24px;
+            height: 24px;
+            margin: 0 8px;
+            color: $neutral-600;
+        }
+
+        .list-title {
+            @extend .Inter-Regular;
+            flex: none;
+            flex-grow: 0;
+            order: 1;
+            margin: 0 3px;
+            color: $neutral-700;
+            font-size: 14px;
+            letter-spacing: 0.1px;
+            line-height: 24px;
+        }
+
+        &:hover:not(.active) {
+            background: $neutral-200;
+            cursor: pointer;
+        }
+
+        &.active {
+            background-color: $primary-050;
+            cursor: pointer;
+            .list-icon {
+                color: $primary-600;
+            }
+
+            .list-title {
+                color: $primary-700;
+            }
+        }
+    }
+
+    /* Active */
+}

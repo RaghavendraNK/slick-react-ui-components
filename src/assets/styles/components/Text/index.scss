@@ -1,0 +1,21 @@
+#RRUCText {
+    .text {
+        color: $neutral-600;
+        font-family: Inter-Regular;
+        font-style: normal;
+        line-height: 16px;
+    }
+
+    .caption {
+        font-size: 12px;
+        font-weight: normal;
+        letter-spacing: 0.4px;
+    }
+
+    .overline {
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,28 @@
+#RRUCActionButton {
+    display: inline-block;
+    .action-btn {
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        cursor: pointer;
+        .action-icon {
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            margin-right: 10px;
+            color: $primary-500;
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .btn-label {
+            @extend .Inter-Medium;
+            color: $primary-600;
+            font-size: 14px;
+            letter-spacing: 0.1px;
+            line-height: 24px;
+        }
+    }
+}

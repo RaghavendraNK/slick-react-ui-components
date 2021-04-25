@@ -1,0 +1,31 @@
+#RRUCDivider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .rule-left {
+        border: 1px solid $neutral-400;
+        flex-grow: 1;
+    }
+
+    .rule-text {
+        @extend .Inter-Medium;
+        padding: 0 8px;
+        color: $neutral-500;
+        font-size: 14px;
+        letter-spacing: 0.75px;
+        line-height: 16px;
+        text-align: center;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-width: 90%;
+    }
+
+    .rule-right {
+        border: 1px solid $neutral-400;
+        flex-grow: 1;
+    }
+}

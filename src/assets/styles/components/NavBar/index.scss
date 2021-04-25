@@ -1,0 +1,108 @@
+%label-common {
+    @extend .Inter-Regular;
+
+    display: flex;
+    flex: none;
+    flex-grow: 0;
+    justify-content: flex-end;
+    order: 0;
+    margin: 0 0;
+}
+
+#RRUCNavBar {
+    height: 32px;
+    min-height: 32px;
+    padding: 16px;
+    @media only screen and (min-width: $rruc-desktop) {
+        height: 16px;
+        min-height: 16px;
+        padding: 24px 32px;
+    }
+    display: flex;
+    align-items: center;
+    width: auto;
+    border-radius: 0;
+    background-color: $white;
+    box-shadow: 0 1px 0 0 $shadow;
+
+    .menu-icon {
+        display: flex;
+        align-items: center;
+        margin: 0 15px 0 0;
+        cursor: pointer;
+    }
+
+    .logo {
+        display: flex;
+        flex-grow: 4;
+        justify-content: flex-start;
+    }
+
+    .profile {
+        display: flex;
+        flex-grow: 8;
+        justify-content: flex-end;
+        cursor: pointer;
+        .detail {
+            text-align: right;
+        }
+
+        .icon {
+            display: flex;
+            flex: none;
+            flex-grow: 0;
+            align-items: center;
+            justify-content: center;
+            order: 1;
+            width: 40px;
+            height: 40px;
+            box-sizing: border-box;
+            margin-left: 12px;
+        }
+    }
+}
+
+.RRUCNavBarMenuWrapper {
+    .MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-rounded {
+        max-width: 0;
+        min-width: 280px;
+        top: 72px !important;
+    }
+
+    .main-menu-item {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 16px 12px;
+        background-color: $white;
+        .icon {
+            margin-right: 12px;
+        }
+        .details {
+            #RRUCText {
+                .text.caption {
+                    white-space: break-spaces;
+                }
+            }
+        }
+        &:hover {
+            background-color: $neutral-050;
+        }
+    }
+    .footer-menu-item {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        padding: 8px 10px 8px 12px !important;
+        background-color: $neutral-200 !important;
+        .icon {
+            margin-right: 12px;
+        }
+        &:hover {
+            background-color: $neutral-300;
+        }
+    }
+    &.MuiPopover-root .MuiPaper-root .MuiMenu-list .MuiMenuItem-root {
+        height: auto;
+    }
+}

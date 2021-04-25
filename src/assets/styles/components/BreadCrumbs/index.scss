@@ -1,0 +1,35 @@
+#RRUCBreadCrumbs {
+    margin-bottom: 16px;
+    @media only screen and (min-width: $rruc-desktop) {
+        margin-bottom: 24px;
+    }
+    .breadcrumbs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        #RRUCButton {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .bradcrumbs-divider {
+            color: $neutral-700;
+            &::after {
+                content: '\00a0';
+            }
+            &::before {
+                content: '\00a0';
+            }
+        }
+        .greyLink {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            @extend .Inter-Regular;
+            color: $neutral-600;
+            font-size: 12px;
+            letter-spacing: 0.4px;
+            line-height: 16px;
+        }
+    }
+}

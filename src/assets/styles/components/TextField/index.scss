@@ -1,0 +1,235 @@
+%label-normal {
+    @extend .Inter-Regular;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+}
+
+%label-small {
+    @extend .Inter-Regular;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+}
+
+%text-root {
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+}
+
+%border-common {
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#RRUCTextField {
+    /* Enabled */
+    min-height: 64px;
+    .MuiFormControl-root.MuiTextField-root {
+        @extend %text-root;
+        .MuiInputBase-formControl {
+            height: inherit;
+            min-height: 48px;
+        }
+
+        &:hover {
+            .MuiInputBase-formControl:not(.Mui-focused):not(.Mui-error):not(.Mui-disabled) {
+                fieldset.MuiOutlinedInput-notchedOutline {
+                    border: 1px solid $neutral-800;
+                }
+
+                input.MuiOutlinedInput-input {
+                    color: $neutral-700;
+                }
+            }
+
+            p.MuiFormHelperText-contained:not(.Mui-focused):not(.Mui-error):not(.MuiFormHelperText-filled):not(.Mui-disabled) {
+                color: $neutral-700;
+            }
+        }
+    }
+
+    fieldset.MuiOutlinedInput-notchedOutline {
+        border: 1px solid $neutral-700;
+        @extend %border-common;
+
+        legend {
+            @extend %label-small;
+            top: -8px;
+            left: 12px;
+            width: auto;
+            span {
+                padding: 0;
+            }
+        }
+    }
+
+    label.MuiInputLabel-outlined,
+    input.MuiOutlinedInput-input {
+        @extend %label-normal;
+        color: $neutral-700;
+        &:hover {
+            color: $neutral-700;
+        }
+    }
+
+    input.MuiOutlinedInput-input {
+        padding: 12px 16px;
+    }
+
+    label.MuiInputLabel-outlined {
+        max-width: 245px;
+        transform: translate(14px, 12px) scale(1);
+        transition: 0.25s ease-out;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    label.MuiFormLabel-filled,
+    label.Mui-focused {
+        + .MuiInputBase-formControl {
+            fieldset {
+                legend {
+                    min-width: 31px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+
+    p.MuiFormHelperText-contained {
+        @extend %label-small;
+        color: $neutral-700;
+    }
+
+    /* Active */
+    fieldset.MuiOutlinedInput-notchedOutline {
+        border: 1px solid $neutral-500;
+        @extend %border-common;
+    }
+
+    label.MuiInputLabel-outlined.MuiInputLabel-shrink {
+        @extend %label-small;
+        top: -20px;
+        left: 0;
+        max-width: unset;
+        color: $neutral-500;
+    }
+
+    input.MuiOutlinedInput-input {
+        @extend %label-normal;
+        color: $neutral-900;
+    }
+
+    p.MuiFormHelperText-contained {
+        @extend %label-small;
+        color: $neutral-500;
+    }
+
+    /* Focused */
+    label.MuiInputLabel-outlined.MuiInputLabel-shrink.Mui-focused {
+        @extend %label-small;
+        top: -20px;
+        left: 0;
+        max-width: unset;
+        color: $primary-600;
+    }
+
+    .Mui-focused {
+        fieldset.MuiOutlinedInput-notchedOutline {
+            border: 2px solid $primary-500;
+            @extend %border-common;
+        }
+
+        input.MuiOutlinedInput-input {
+            @extend %label-normal;
+            color: $neutral-900;
+        }
+    }
+    p.MuiFormHelperText-root {
+        margin-top: 4px;
+
+        &.MuiFormHelperText-contained.Mui-focused {
+            @extend %label-small;
+            color: $primary-600;
+        }
+    }
+
+    /* Error */
+    label.MuiInputLabel-outlined.MuiInputLabel-shrink.Mui-focused.Mui-error {
+        @extend %label-small;
+        top: -20px;
+        left: 0;
+        max-width: unset;
+        color: $error-800;
+    }
+
+    .Mui-error {
+        fieldset.MuiOutlinedInput-notchedOutline {
+            border: 2px solid $error-800;
+            @extend %border-common;
+        }
+
+        input.MuiOutlinedInput-input {
+            @extend %label-normal;
+            color: $neutral-900;
+        }
+    }
+
+    p.MuiFormHelperText-root {
+        margin-top: 4px;
+
+        &.MuiFormHelperText-contained.Mui-error {
+            @extend %label-small;
+            color: $error-800;
+        }
+    }
+
+    /* Disabled */
+    label.MuiInputLabel-outlined.MuiInputLabel-shrink.Mui-disabled {
+        @extend %label-small;
+        top: -20px;
+        left: 0;
+        max-width: unset;
+        color: $neutral-400;
+    }
+
+    .Mui-disabled {
+        input.MuiOutlinedInput-input.Mui-disabled {
+            @extend %label-normal;
+            color: $neutral-400;
+        }
+
+        fieldset.MuiOutlinedInput-notchedOutline {
+            border: 1px solid $neutral-400;
+            @extend %border-common;
+        }
+    }
+
+    p.MuiFormHelperText-root {
+        margin-top: 4px;
+
+        &.MuiFormHelperText-contained.Mui-disabled {
+            @extend %label-small;
+            color: $neutral-400;
+        }
+    }
+
+    /* Select */
+    .MuiSelect-root.MuiOutlinedInput-input {
+        padding: 12px 16px;
+    }
+    .MuiSelect-selectMenu {
+        @extend %label-normal;
+        &.MuiSelect-select {
+            background-color: $white;
+            &:focus {
+                background-color: $white;
+            }
+        }
+    }
+}

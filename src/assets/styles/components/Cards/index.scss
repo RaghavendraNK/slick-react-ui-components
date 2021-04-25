@@ -1,0 +1,53 @@
+#RRUCCard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 24px;
+    border: 1px solid $neutral-300;
+    border-radius: 6px;
+    background: $white;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: fit-content;
+    .card-menu {
+        .card-item {
+            display: flex;
+            align-items: center;
+            .icon {
+                width: 40px;
+                height: 40px;
+                margin: 0 8px 0 0;
+                color: $primary-400;
+                svg {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .content {
+                #RRUCText {
+                    .text.caption {
+                        max-width: 216px;
+                    }
+                }
+            }
+        }
+    }
+    .card-stats {
+        .card-item {
+            #RRUCTextBody {
+                max-width: 210px;
+                margin-top: 4px;
+            }
+        }
+        .card-actions {
+            padding-top: 20px;
+        }
+        .zeroclass {
+            .h3,
+            .h6,
+            .textbody.textbody-two {
+                color: $neutral-500;
+            }
+        }
+    }
+}

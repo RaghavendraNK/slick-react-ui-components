@@ -1,0 +1,19 @@
+#RRUCTextBody {
+    .textbody {
+        @extend .Inter-Regular;
+    }
+
+    .textbody-one {
+        color: $neutral-600;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 24px;
+    }
+
+    .textbody-two {
+        color: $neutral-700;
+        font-size: 14px;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+    }
+}

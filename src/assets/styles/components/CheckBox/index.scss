@@ -1,0 +1,17 @@
+#RRUCCheckBox {
+    display: flex;
+    align-items: center;
+    .Mui-checked {
+        color: $primary-500;
+        .MuiTouchRipple-root {
+            color: $primary-500;
+        }
+    }
+
+    .Mui-checked.Mui-disabled {
+        color: $neutral-400;
+        .MuiTouchRipple-root {
+            color: $neutral-400;
+        }
+    }
+}

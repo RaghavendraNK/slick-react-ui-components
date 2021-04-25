@@ -1,0 +1,19 @@
+#RRUCSubTitle {
+    .subtitle {
+        color: $neutral-900;
+    }
+
+    .subtitle-one {
+        @extend .Inter-Regular;
+        font-size: 16px;
+        letter-spacing: 0.15px;
+        line-height: 24px;
+    }
+
+    .subtitle-two {
+        @extend .Inter-Medium;
+        font-size: 14px;
+        letter-spacing: 0.1px;
+        line-height: 24px;
+    }
+}
