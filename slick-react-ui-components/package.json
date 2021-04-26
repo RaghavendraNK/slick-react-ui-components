@@ -1,0 +1,42 @@
+{
+  "name": "slick-react-ui-components",
+  "version": "1.0.1",
+  "description": "react responsive components with form validations and responsiveness",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaghavendraNK/slick-react-ui-components.git"
+  },
+  "keywords": [
+    "react",
+    "@material-ui",
+    "formik",
+    "scss",
+    "typescript"
+  ],
+  "peerDependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "classnames": "^2.3.1",
+    "formik": "^2.2.6",
+    "react-number-format": "^4.5.5",
+    "yup": "^0.32.9"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "classnames": "^2.3.1",
+    "formik": "^2.2.6",
+    "react-number-format": "^4.5.5",
+    "yup": "^0.32.9"
+  },
+  "author": "Raghavendra Nk And Karthik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RaghavendraNK/slick-react-ui-components/issues"
+  },
+  "homepage": "https://github.com/RaghavendraNK/slick-react-ui-components#readme"
+}
