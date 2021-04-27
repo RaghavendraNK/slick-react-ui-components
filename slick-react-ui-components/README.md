@@ -6,7 +6,7 @@
 
 ![alt tag](https://github.com/RaghavendraNK/slick-react-ui-components/blob/main/slick-react-ui-components/LogoTitle~bSeopQPk.svg)
 
-<a heref='https://slick-react-ui-components.herokuapp.com/'>Demo</a>
+[Demo](https://slick-react-ui-components.herokuapp.com/)
 
 ## Install
 
