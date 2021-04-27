@@ -1,6 +1,6 @@
 {
   "name": "slick-react-ui-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "react responsive components with form validations and responsiveness",
   "main": "index.js",
   "scripts": {
