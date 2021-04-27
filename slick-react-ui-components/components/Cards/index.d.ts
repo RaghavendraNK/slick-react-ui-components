@@ -1,6 +1,6 @@
 export interface Props {
     type: 'simple' | 'cardmenu' | 'statistics';
-    cardDetails: any;
+    details: any;
     content?: JSX.Element;
     handleClick?: Function;
 }
