@@ -1,19 +1,19 @@
-import { IListItem } from '../ListItems';
+import { ListItemType } from '../ListItems';
 export interface Props {
-    footerMenuItems?: Array<IListItem>;
-    handleMenuClick?: (menuItem: IListItem) => void;
+    footerMenuItems?: Array<ListItemType>;
+    handleMenuClick?: (menuItem: ListItemType) => void;
     isTabletOrMobile?: boolean;
     logo?: JSX.Element;
-    mainMenuItems?: Array<IListItem>;
+    mainMenuItems?: Array<ListItemType>;
     onMenuClick?: Function;
     profileDetails?: JSX.Element;
 }
 export interface MENU {
     anchorEl: Element | null;
-    footerMenuItems?: Array<IListItem>;
+    footerMenuItems?: Array<ListItemType>;
     handleClose: (event: {}, reason: string) => void;
-    handleMenuClick?: (menuItem: IListItem) => void;
-    mainMenuItems?: Array<IListItem>;
+    handleMenuClick?: (menuItem: ListItemType) => void;
+    mainMenuItems?: Array<ListItemType>;
 }
 export declare const NavBarMenu: ({ anchorEl, footerMenuItems, handleClose, handleMenuClick, mainMenuItems, }: MENU) => JSX.Element;
 export declare const NavBar: (props: Props) => JSX.Element;

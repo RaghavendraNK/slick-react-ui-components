@@ -1,9 +1,9 @@
-import { IListItem } from '../ListItems';
+import { ListItemType } from '../ListItems';
 export interface Props {
     isTabletOrMobile?: boolean;
-    footerMenuItems?: Array<IListItem>;
-    handleMenuClick?: Function;
-    mainMenuItems: Array<IListItem>;
+    footerMenuItems?: Array<ListItemType>;
+    handleMenuClick?: (selected: ListItemType) => void;
+    mainMenuItems: Array<ListItemType>;
     profileDetails?: JSX.Element;
     selectedItem?: string;
     isOpen?: boolean;

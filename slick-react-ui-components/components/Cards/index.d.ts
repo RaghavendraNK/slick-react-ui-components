@@ -1,8 +1,8 @@
 export interface Props {
-    type: 'simple' | 'cardmenu' | 'statistics';
+    type: 'Custom' | 'CardIcon' | 'CardAction';
     details: any;
     content?: JSX.Element;
-    handleClick?: Function;
+    handleClick?: (item: any) => void;
 }
 export declare const Card: (props: Props) => JSX.Element;
 export default Card;
