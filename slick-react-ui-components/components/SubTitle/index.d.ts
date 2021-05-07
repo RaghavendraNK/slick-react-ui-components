@@ -1,3 +1,4 @@
+/// <reference types="react" />
 export interface Props {
     size: 1 | 2;
     text: string;

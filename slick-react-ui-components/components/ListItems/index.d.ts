@@ -1,3 +1,4 @@
+/// <reference types="react" />
 /**
  * * description: optional srting for list element
  * * icon: icon for list item

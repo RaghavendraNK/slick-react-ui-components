@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import { OutlinedTextFieldProps } from '@material-ui/core';
 import { Option } from '../TextField';
 import { BreakPointType } from '../GridContainer';
@@ -16,13 +17,14 @@ export interface FormListItemType extends OutlinedTextFieldProps {
     name: string;
     options?: Array<Option>;
     type: string;
+    handleClick?: () => void;
 }
 /**
  * * cols: list of form field elements
  * * sizes: breakpoints to display form elements in responsive mode
  */
 export interface FormListType {
-    cols: FormListItemType[];
+    cols: FormListItemType[] | any[];
     sizes?: BreakPointType;
 }
 /**

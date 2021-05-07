@@ -1,3 +1,4 @@
+/// <reference types="react" />
 /**
  * * size: H1 to H6 for header tags
  * * text: string or number to be displayed

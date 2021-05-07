@@ -1,3 +1,4 @@
+/// <reference types="react" />
 /**
  * * dense: height of the button, its a optional one, by default 32 will be the height of the button
  * * disabled: boolean which will be used to disable or enable button

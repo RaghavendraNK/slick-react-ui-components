@@ -1,3 +1,4 @@
+/// <reference types="react" />
 /**
  * * seperator: optional string|JSX.Element displayed in between of the horizontal divider
  */

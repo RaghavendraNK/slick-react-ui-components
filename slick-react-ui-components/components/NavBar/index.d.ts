@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import { ListItemType } from '../ListItems';
 export interface Props {
     footerMenuItems?: Array<ListItemType>;

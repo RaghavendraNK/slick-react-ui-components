@@ -1,3 +1,4 @@
+/// <reference types="react" />
 export interface Props {
     isLogoWithTitle?: boolean;
     width: number;

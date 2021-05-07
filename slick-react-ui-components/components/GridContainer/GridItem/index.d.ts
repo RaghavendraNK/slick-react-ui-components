@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import { Item, BreakPointType } from '../index';
 /**
  * * item: element to be displayed in the grid system

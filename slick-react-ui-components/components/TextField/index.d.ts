@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import { OutlinedTextFieldProps } from '@material-ui/core';
 export interface Option {
     label: string;

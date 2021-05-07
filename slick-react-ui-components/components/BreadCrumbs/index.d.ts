@@ -1,3 +1,4 @@
+/// <reference types="react" />
 /**
  * * id: for unique identification for each breadcrumb item
  * * label: display string which will be shown on UI
